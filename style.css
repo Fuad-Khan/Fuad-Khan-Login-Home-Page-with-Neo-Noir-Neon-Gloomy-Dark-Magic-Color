@@ -1,0 +1,152 @@
+/* General body styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+  background: linear-gradient(135deg, #4a148c, #d500f9); /* Neon Gloomy gradient */
+}
+
+/* Box Form */
+.box-form {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  background: #121212; /* Dark background */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Neon glow effect */
+}
+
+/* Left Side */
+.box-form .left {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1596741241592-d9cb1f6cc489') center/cover no-repeat, /* Dark-themed background image */
+              linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Overlay for effect */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box-form .left .overlay {
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box-form .left .overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff00ff; /* Neon Pink */
+}
+
+.box-form .left .overlay p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.box-form .left .overlay span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-form .left .overlay span p {
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.box-form .left .overlay span a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #00ffff, #ff00ff); /* Neon gradient buttons */
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+}
+
+.box-form .left .overlay span a:hover {
+  background: linear-gradient(135deg, #ff00ff, #00ffff); /* Reverse gradient on hover */
+}
+
+/* Right Side */
+.box-form .right {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-form .right h5 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff00ff; /* Neon Pink */
+}
+
+.box-form .right p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.box-form .right .inputs {
+  margin-bottom: 20px;
+}
+
+.box-form .right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #b0b3b9;
+  background: #1e1e1e; /* Dark input background */
+  color: #eee; /* Light text color */
+}
+
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box-form .right .remember-me--forget-password label {
+  display: flex;
+  align-items: center;
+}
+
+.box-form .right .remember-me--forget-password input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.box-form .right button {
+  background: linear-gradient(135deg, #ff00ff, #00ffff); /* Neon gradient button */
+  color: #fff;
+  padding: 15px 40px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 60px; /* Slightly larger border-radius for a more rounded button */
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size */
+  margin-top: 20px;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.6); /* Enhanced neon glow effect */
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.box-form .right button:hover {
+  background: linear-gradient(135deg, #00ffff, #ff00ff); /* Reverse gradient on hover */
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.8); /* Enhanced glow effect on hover */
+}
